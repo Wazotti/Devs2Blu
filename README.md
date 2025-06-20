@@ -1,4 +1,4 @@
-# About Me
+# 📝About Me
 
    Hello, how are you? My name is Maria Clara Mazotti, I'm 17 years old and I've been studying programming since 2020, when I started during the pandemic. 
  Since then, I've been dedicating myself to languages ​​like Python, Java, JavaScript, HTML, CSS and a little bit of MySQL. 
