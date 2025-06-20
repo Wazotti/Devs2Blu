@@ -1,8 +1,0 @@
- Olá, tudo bem? Meu nome é Maria Clara Mazotti, tenho 17 anos e estudo programação desde 2020, quando comecei durante a pandemia. Desde então, 
-venho me dedicando de forma autônoma a linguagens como Python, Java, JavaScript, HTML, CSS e um pouco de MySQL.
- Embora tenha aprendido muito por conta própria, sempre senti falta de uma experiência presencial, de ter alguém ao meu lado para tirar 
-dúvidas e me orientar mais de perto.
- Atualmente, trabalho como Jovem Aprendiz em TI na Cremer Têxtil. Apesar de estar ganhando experiência, o meu grande sonho é seguir carreira 
-em empresas como a Senior e, futuramente, conquistar uma oportunidade em grandes empresas de tecnologia, como o Google.
- Do curso, espero crescer profissionalmente, aproveitar ao máximo o aprendizado e todas as oportunidades que ele pode me oferecer. Estou muito 
-motivada para me desenvolver e transformar essa chance em um grande passo para o meu futuro.
