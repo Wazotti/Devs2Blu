@@ -16,6 +16,7 @@ public class CadastroProdutos {
             System.out.println("5 - Listar Produtos Acima da Média");
             System.out.println("6 - Atualizar Preço de um Produto");
             System.out.println("7 - Remover Produto pelo Nome");
+            System.out.println("8 - Calcular Média de Preços");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
 
@@ -146,6 +147,19 @@ public class CadastroProdutos {
                         System.out.println("Produto removido com sucesso!😁");
                     } else {
                         System.out.println("Produto não encontrado.😥");
+                    }
+                    break;
+
+                case 8:
+                    if (listaPrecos.isEmpty()) {
+                        System.out.println("Nenhum produto cadastrado para calcular a média.😥");
+                    } else {
+                        double soma = 0;
+                        for (double preco : listaPrecos) {
+                            soma += preco;
+                        }
+                        double media = soma / listaPrecos.size();
+                        System.out.printf("A média de preços dos produtos é: R$ %.2f \n", media);
                     }
                     break;
 
