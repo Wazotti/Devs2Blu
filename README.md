@@ -1,7 +1,7 @@
 # 📝About Me
 
    Hello, how are you? My name is Maria Clara Mazotti, I'm 17 years old and I've been studying programming since 2020, when I started during the pandemic. 
- Since then, I've been dedicating myself to languages ​​like Python, Java, JavaScript, HTML, CSS and a little bit of MySQL. 
+ Since then, I've been dedicating myself to learning languages like Python, Java, JavaScript, HTML, CSS, and a bit of databases. 
    Although I've learned a lot on my own, I’ve always missed the in-person experience, having someone by my side to answer questions and give me more guidance. 
 I currently work as a Young Apprentice in IT. Although I’m gaining valuable experience, my big dream is to pursue a career at a technology company that values 
 innovation and growth. In the future, I hope to get an opportunity at a major global company, like Google. 
