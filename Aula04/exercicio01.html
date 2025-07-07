@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01 - Calculadora de Média</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-300 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <div class="flex justify-center items-center mb-6">
+      <h1 class="text-2xl font-bold text-purple-400 mr-2">Calculadora de Média</h1>
+      <img src="imagens/calculadora.png" alt="Imagem Média" class="w-10 h-10 object-contain" />
+    </div>
+
+    <form id="formulario" onsubmit="return calcular()" class="space-y-5">
+      <div>
+        <label for="nota1" class="block text-gray-700 font-medium mb-1">Primeira Nota:</label>
+        <input type="number" id="nota1" name="nota1" step="0.1" placeholder="Digite a nota..."
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400" />
+      </div>
+
+      <div>
+        <label for="nota2" class="block text-gray-700 font-medium mb-1">Segunda Nota:</label>
+        <input type="number" id="nota2" name="nota2" step="0.1" placeholder="Digite a nota..."
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400" />
+      </div>
+
+      <div>
+        <label for="nota3" class="block text-gray-700 font-medium mb-1">Terceira Nota:</label>
+        <input type="number" id="nota3" name="nota3" step="0.1" placeholder="Digite a nota..."
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400" />
+      </div>
+
+    <div class="text-center mt-6">
+      <h1 id="exibirMedia" class="text-lg font-medium mb-2"></h1>
+      <h1 id="exibirSituacao" class="text-lg font-medium"></h1>
+    </div>
+
+      <input type="submit" value="Calcular Média"
+        class="w-full bg-purple-400 text-white py-2 rounded-lg font-semibold hover:bg-purple-500" />
+    </form>
+
+  </div>
+
+  <script src="script01.js"></script>
+</body>
+</html>
