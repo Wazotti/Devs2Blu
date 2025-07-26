@@ -8,7 +8,6 @@ public class Main {
         Personagem personagem = new Personagem("Gandalf");
         personagem.setClasse(mago);
         personagem.setArma(cajado);
-
         personagem.exibirClasse();
         personagem.exibirArma();
         personagem.usarHabilidade();
