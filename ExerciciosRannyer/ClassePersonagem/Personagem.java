@@ -3,7 +3,7 @@ package ClassePersonagem;
 public class Personagem {
     private String nome;
     private Classe classe;
-    private Arma arma;  // NOVO atributo
+    private Arma arma;
 
     public Personagem(String nome) {
         this.nome = nome;
