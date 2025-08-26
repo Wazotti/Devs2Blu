@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> musicas = new ArrayList<>();
+
+        System.out.println("Digite suas 5 músicas favoritas:");
+        for (int i = 0; i < 5; i++) {
+            System.out.print((i + 1) + " música: ");
+            String musica = scanner.nextLine();
+            musicas.add(musica);
+        }
+
+        System.out.println("\nSua lista inicial de músicas:");
+        for (int i = 0; i < musicas.size(); i++) {
+            System.out.println((i + 1) + ". " + musicas.get(i));
+        }
+
+        System.out.println("\nAgora, vamos reordenar uma música na lista.");
+        System.out.print("Digite o índice (1-5) da música que você quer mover: ");
+        int indiceOrigem = scanner.nextInt() - 1;
+
+        System.out.print("Digite o novo índice (1-5) para essa música: ");
+        int indiceDestino = scanner.nextInt() - 1;
+
+        String musicaMovida = musicas.get(indiceOrigem);
+        musicas.remove(indiceOrigem);
+        musicas.add(indiceDestino, musicaMovida);
+
+        System.out.println("\nSua lista final de músicas:");
+        for (int i = 0; i < musicas.size(); i++) {
+            System.out.println((i + 1) + ". " + musicas.get(i));
+        }
+        scanner.close();
+    }
+}
+

@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExercicioLista02 {
+
+    public static void main(String[] args) {
+        ArrayList<String> lista = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            int opcao  =0;
+            System.out.println("\n --- Menu De Compras --- \n");
+            System.out.println("1 - Adicionar Item na Lista");
+            System.out.println("2 - Exibir Lista de Comprar");
+            System.out.println("3 - Remover Item");
+            System.out.println("0 - Sair");
+            System.out.print("Escolha uma Opção: ");
+
+            if (scanner.hasNextInt()) {
+                opcao = scanner.nextInt();
+                scanner.nextLine();
+            } else {
+                System.out.println("Opção inválida. Digite um número.");
+                scanner.nextLine();
+            }
+            switch (opcao) {
+                case 1:
+                    System.out.print("Digite o nome do item para adicionar: ");
+                    String nome = scanner.nextLine();
+                    lista.add(nome);
+                    System.out.println("Item adicionado com sucesso!");
+                    break;
+
+                case 2:
+                    if (lista.isEmpty()) {
+                        System.out.println("Nenhum item cadastrado.");
+                    } else {
+                        System.out.println("Itens cadastrados:");
+                        for (int i = 0; i < lista.size(); i++) {
+                            System.out.println(i + " - " + lista.get(i));
+                        }
+                    }
+                    break;
+
+                case 3:
+                    if (lista.isEmpty()) {
+                        System.out.println("Nenhum item para remover.");
+                    } else {
+                        System.out.print("Digite o índice do item para remover: ");
+                        if (scanner.hasNextInt()) {
+                            int indice = scanner.nextInt();
+                            scanner.nextLine();
+                            if (indice >= 0 && indice < lista.size()) {
+                                String removido = lista.remove(indice);
+                                System.out.println("Item \"" + removido + "\" foi removido com sucesso.");
+                            } else {
+                                System.out.println("Índice inválido.");
+                            }
+                        } else {
+                            System.out.println("Por favor, digite um número válido.");
+                            scanner.nextLine();
+                        }
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Saindo do programa...");
+                    break;
+            }
+            if(opcao ==0) break;
+        }
+    }
+}

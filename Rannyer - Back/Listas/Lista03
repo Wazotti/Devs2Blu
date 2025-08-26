@@ -1,0 +1,27 @@
+import com.sun.nio.sctp.AbstractNotificationHandler;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExercicioLista03 {
+
+    public static void main(String[] args) {
+        ArrayList<String> palavras = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite palavras digite FIM para encerrar:");
+
+        while (true) {
+            String entrada = scanner.nextLine();
+
+            if (entrada.equalsIgnoreCase("fim")) {
+                break;
+            }
+            palavras.add(entrada);
+        }
+        System.out.println("Você digitou " + palavras.size() + " plavras.");
+        System.out.println("As palavras foram " + palavras);
+
+        scanner.close();
+    }
+}
